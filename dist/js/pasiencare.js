@@ -8,6 +8,26 @@ $(document).ready(function () {
         leftMode: true,
         focusOnSelect: false
     });
+
+    $('.single-slider').slick({
+        autoplay: true,
+        dots: false,
+        arrows: true,
+        focusOnSelect: false
+    });
+
+
+    // SideBar
+
+    $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+    });
 });
 
 
@@ -16,16 +36,10 @@ $(window).scroll(function() {
     if($(this).scrollTop() > scrollPixel) {
         if ($(this).scrollTop() > 150){
             $('header').addClass("after-scroll");
-            $('header .app-logo').removeClass("text-primary");
-            $('header a:first-child .btn').removeClass("text-primary");
-            $('header a:first-child .btn').addClass("text-white");
         }
     } else {
         if ($(this).scrollTop() < 150){
             $('header').removeClass("after-scroll");
-            $('header .app-logo').addClass("text-primary");
-            $('header a:first-child .btn').addClass("text-primary");
-            $('header a:first-child .btn').removeClass("text-white");
         }
     }
     scrollPixel = $(this).scrollTop();
