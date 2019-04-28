@@ -8,13 +8,6 @@
   display: none;
 }
 
-.label.label-info {
-  background-color: #F7AF20;
-  color: #ffffff;
-  font-size: 8px;
-  padding: 0px 5px;
-}
-
 .input-subs input {
   border: none;
   font-size: 12px;
@@ -88,14 +81,15 @@
 }
 
 .label {
-  font-weight: 300;
-  font-size: 11px;
+  font-weight: 400;
+  font-size: 12px;
   padding: 3px 5px;
+  border-radius: 4px;
 }
 
-.label.label-primary {
-  background-color: #F4EDED;
-  color: #F8686D;
+.label.label-info {
+  background-color: #f5a623;
+  color: #ffffff;
 }
 
 .label-cart-notif {
@@ -143,6 +137,11 @@
   background-color: #16a085;
   border-color: #16a085;
   color: #ffffff;
+}
+
+.btn-outline-primary {
+  color: #16a085;
+  border-color: #16a085;
 }
 
 .btn-secondary {
@@ -232,6 +231,17 @@
   border: none;
 }
 
+.floating-share-btn {
+  position: fixed;
+  top: 300px;
+  left: 25px;
+  z-index: 12;
+}
+
+.floating-share-btn ul li {
+  list-style: none;
+}
+
 /*Icon Style*/
 .linked-soc li .soc-container {
   font-size: 20px;
@@ -243,11 +253,11 @@
 }
 
 .linked-soc li .soc-container.fb {
-  background-color: #2A5297;
+  background-color: #1f518c;
 }
 
 .linked-soc li .soc-container.twitter {
-  background-color: #1EA1F2;
+  background-color: #34b2cb;
 }
 
 .linked-soc li .soc-container.youtube {
@@ -283,6 +293,15 @@
   resize: none;
 }
 
+.form-control:focus {
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  font-size: 12px;
+  font-weight: 500;
+}
+
 .input-group.primary-flat {
   border-bottom: solid 1px #16a085;
 }
@@ -310,6 +329,15 @@
   box-shadow: none;
 }
 
+.input-group .form-control {
+  background-color: transparent;
+}
+
+.input-group .input-group-prepend .input-group-text, .input-group .input-group-append .input-group-text {
+  border: none;
+  background: transparent;
+}
+
 /*URL and Text*/
 a {
   color: #005CA8;
@@ -329,7 +357,7 @@ a.invisible-link {
 }
 
 .text-tertiary {
-  color: #E6B223 !important;
+  color: #f5a623 !important;
 }
 
 /*Font Size*/
@@ -633,12 +661,17 @@ a.invisible-link {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 9;
   /* When the radio button is checked, add a blue background */
   /* Show the indicator (dot/circle) when checked */
 }
 
 .radio-control input:checked ~ .radio-check {
-  background-color: #60AEEE;
+  background-color: #16a085;
+  border: solid 2px #16a085;
 }
 
 .radio-control input:checked ~ .radio-check:after {
@@ -655,7 +688,7 @@ a.invisible-link {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #60AEEE;
+  background-color: #16a085;
   border: solid 2px #ffffff;
 }
 
@@ -665,8 +698,8 @@ a.invisible-link {
   left: 0;
   height: 18px;
   width: 18px;
-  background-color: #ffffff;
-  border: solid 2px #60AEEE;
+  background-color: #d8d8d8;
+  border: solid 2px #d8d8d8;
   border-radius: 50%;
   /* Create the indicator (the dot/circle - hidden when not checked) */
 }
@@ -1144,6 +1177,10 @@ a.invisible-link {
   bottom: 0;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .panel-main-form {
   background: linear-gradient(106deg, #ffdd4f, #fdb927);
   padding: 40px 30px 50px;
@@ -1160,6 +1197,26 @@ a.invisible-link {
 
 .panel-main-form.long-head {
   margin-top: 169px;
+}
+
+.primary-tabs {
+  border-bottom: none;
+}
+
+.primary-tabs li a {
+  color: rgba(0, 0, 0, 0.31);
+  font-weight: 500;
+  border: none !important;
+}
+
+.primary-tabs li a.active {
+  border: none;
+  background: transparent !important;
+  color: #16a085 !important;
+}
+
+.primary-tabs li a:hover {
+  border: none;
 }
 
 /* ---------------------------------------------------
@@ -1526,10 +1583,6 @@ header {
   padding: 15px 0;
 }
 
-header .app-logo {
-  font-size: 28px;
-}
-
 header .header-menu {
   margin: 10px 0;
 }
@@ -1552,6 +1605,10 @@ header.after-scroll, header.read-scroll {
   -o-transition-duration: 1s;
 }
 
+.app-logo {
+  font-size: 28px;
+}
+
 footer {
   margin: 100px 0;
 }
@@ -1561,7 +1618,6 @@ footer .app-logo {
 }
 
 .main-header-bg {
-  background-image: url("../dist/img/header_main.jpg");
   height: 699px;
   background-size: cover;
   background-position: center;
@@ -1724,4 +1780,23 @@ footer .app-logo {
 
 .primary-progress .progress-bar {
   background-color: #16a085;
+}
+
+.img-profile {
+  max-width: 80px;
+}
+
+.overlay-img {
+  position: relative;
+}
+
+.overlay-img .overlay-captions {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }

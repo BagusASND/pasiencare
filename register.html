@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="dist/font/fontawesome-free-5.0.13/web-fonts-with-css/css/fontawesome-all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+  <!-- Plugin -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="styles/main.css">
+
+  <title>Pasiencare - Register Pasien</title>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+      <p class="text-center app-logo text-primary mt-50">
+        <span class="fw5">PASIEN</span><span class="fw3">CARE</span>
+      </p>
+      <h4 class="text-center mt-50 pt-50">Pendaftaran Pasien</h4>
+      <p class="text-center mt-10">isi data diri Anda dengan lengkap, sesuaikan dengan identitas pribadi Anda dan pastikan semua kolom tidak boleh kosong</p>
+
+      <div class="row mt-50">
+        <div class="col-12">
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="Nama Lengkap">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <div class="input-group shadow bg-white rounded">
+                <input type="text" class="form-control border-0" placeholder="Tanggal Lahir">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <label class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-form-label text-muted fw5">Jenis Kelamin</label>
+            <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                  <div class="radio-control">
+                    <input type="radio" name="gender_option">
+                    <div class="radio-check"></div> Laki-laki
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-3 col-xl-3 pt-2">
+                  <div class="radio-control">
+                    <input type="radio" name="gender_option">
+                    <div class="radio-check"></div> Perempuan
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="email" class="form-control shadow border-0" placeholder="Alamat Email">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="number" class="form-control shadow border-0" placeholder="Nomor Telepon">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <textarea class="form-control no-resize shadow border-0" placeholder="Alamat" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Desa/Kelurahan">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Kecamatan">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Kabupaten/Kota">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <input type="text" class="form-control shadow border-0" placeholder="Provinsi">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="Riwayat Penyakit">
+            </div>
+          </div>
+          <div class="row form-group mb-20 mt-40">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <button type="button" class="btn btn-primary btn-block mb-15">DAFTAR MENJADI PASIEN</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+              <button type="button" class="btn btn-outline-primary btn-block mb-15">BATAL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt-50">
+    <div class="col-12 no-padding">
+      <div class="card bg-primary border-0 pt-50 pb-50">
+        <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
+          <h4 class="text-white"><a href="" class="invisible-link border-bottom">Sudah punya klinik dan ingin didaftarkan?</a> <span class="font-italic fw3">atau</span></h4>
+          <h4 class="text-white mt-15"><a href="" class="invisible-link border-bottom">Daftar menjadi tenaga kesehatan</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="dist/js/jquery.min.js"></script>
+<script src="dist/js/bootstrap.bundle.min.js"></script>
+<!-- Plugin -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Custom JS -->
+<script type="text/javascript" src="dist/js/pasiencare.js"></script>
+</body>
+</html>
