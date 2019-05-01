@@ -272,20 +272,5 @@
 <script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!-- Custom JS -->
 <script type="text/javascript" src="dist/js/pasiencare.js"></script>
-<script>
-    $('#inputGroupFile02').on('change',function(){
-        //get the file name
-        var fileName = $(this).val();
-        //replace the "Choose a file" label
-        $(this).next('.custom-file-label').html(fileName);
-    })
-
-    function trainingStatementNo(){
-        document.getElementById('trainingForm').style.display = 'none';
-    }
-    function trainingStatementYes(){
-        document.getElementById('trainingForm').style.display = 'block';
-    }
-</script>
 </body>
 </html>
