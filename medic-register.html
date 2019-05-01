@@ -16,7 +16,7 @@
 
   <link rel="stylesheet" href="styles/main.css">
 
-  <title>Pasiencare - Register Pasien</title>
+  <title>Pasiencare - Register Tenaga Kesehatan</title>
 </head>
 <body>
 
@@ -26,14 +26,19 @@
       <p class="text-center app-logo text-primary mt-50">
         <span class="fw5">PASIEN</span><span class="fw3">CARE</span>
       </p>
-      <h4 class="text-center mt-50 pt-50">Pendaftaran Pasien</h4>
+      <h4 class="text-center mt-50 pt-50">Pendaftaran Tenaga Kesehatan</h4>
       <p class="text-center mt-10">Isi data diri Anda dengan lengkap, sesuaikan dengan identitas pribadi Anda dan pastikan semua kolom tidak boleh kosong</p>
 
       <div class="row mt-50">
         <div class="col-12">
           <div class="row form-group mb-20">
             <div class="col-12">
-              <input type="text" class="form-control shadow border-0" placeholder="Nama Lengkap">
+              <input type="text" class="form-control shadow border-0" placeholder="Nama Lengkap sesuai KTP">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="number" class="form-control shadow border-0" placeholder="No KTP">
             </div>
           </div>
           <div class="row form-group mb-20">
@@ -65,22 +70,7 @@
               </div>
             </div>
           </div>
-          <div class="row form-group mb-20">
-            <div class="col-12">
-              <input type="email" class="form-control shadow border-0" placeholder="Alamat Email">
-            </div>
-          </div>
-          <div class="row form-group mb-20">
-            <div class="col-12">
-              <input type="number" class="form-control shadow border-0" placeholder="Nomor Telepon">
-            </div>
-          </div>
-          <div class="row form-group mb-20">
-            <div class="col-12">
-              <textarea class="form-control no-resize shadow border-0" placeholder="Alamat" rows="3"></textarea>
-            </div>
-          </div>
-          <div class="row form-group mb-20">
+          <div class="row form-group mb-0">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
               <input type="text" class="form-control shadow border-0" placeholder="Desa/Kelurahan">
             </div>
@@ -93,41 +83,115 @@
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
               <input type="text" class="form-control shadow border-0" placeholder="Provinsi">
             </div>
+          </div>
+          <div class="row form-group mb-20">
             <div class="col-12">
-              <input type="text" class="form-control shadow border-0" placeholder="Riwayat Penyakit" data-toggle="dropdown">
-              <div class="dropdown-menu border-0 shadow p-20 text-muted fw5">
-                <ul class="list-group list-group-flush text-sm">
-                  <li class="list-group-item border-0 p-5 text-primary">Diabetes</li>
-                  <li class="list-group-item border-0 p-5">Kanker</li>
-                  <li class="list-group-item border-0 p-5">Hipertensi</li>
-                  <li class="list-group-item border-0 p-5">Kegemukan</li>
-                  <li class="list-group-item border-0 p-5">Stroke</li>
-                  <li class="list-group-item border-0 p-5">Penyakit Jantung</li>
-                  <li class="list-group-item border-0 p-5">Penyakit Ginjal</li>
-                  <li class="list-group-item border-0 p-5">HIV/AIDS</li>
-                  <li class="list-group-item border-0 p-5">Lainnya</li>
-                </ul>
+              <textarea class="form-control no-resize shadow border-0" placeholder="Alamat" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="number" class="form-control shadow border-0" placeholder="No Telepon">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="email" class="form-control shadow border-0" placeholder="Email">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="Pekerjaan">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <input type="text" class="form-control shadow border-0" placeholder="No STR">
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <div class="input-group shadow bg-white rounded">
+                <input type="text" class="form-control border-0" placeholder="Tanggal STR Mulai Berlaku">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+              <div class="input-group shadow bg-white rounded">
+                <input type="text" class="form-control border-0" placeholder="Tanggal STR Berakhir">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                </div>
               </div>
             </div>
           </div>
+          <div class="row form-group mb-20">
+            <div class="col-12">
+              <div class="custom-file primary-input-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                <label class="custom-file-label text-center" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Klik disini untuk upload STR</label>
+              </div>
+              <p class="text-sm text-muted mt-10 ml-25">Format *.jpg, *.png, *.pdf</p>
+            </div>
+          </div>
+          <div class="row form-group mb-20">
+            <label class="col-12 fw5">Sudah pernah mengikuti pelatihan bersertifikat ?</label>
+            <div class="col-12">
+              <div class="row">
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 pt-2">
+                  <div class="radio-control fw5">
+                    <input type="radio" name="training_statement" onclick="trainingStatementNo();">
+                    <div class="radio-check"></div> Belum Pernah
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 pt-2">
+                  <div class="radio-control fw5">
+                    <input type="radio" name="training_statement" onclick="trainingStatementYes();" checked>
+                    <div class="radio-check"></div> Sudah Pernah
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="trainingForm">
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="Jenis Pelatihan">
+              </div>
+            </div>
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="No Sertifikat">
+              </div>
+            </div>
+            <div class="row form-group mb-20">
+              <div class="col-12">
+                <input type="text" class="form-control shadow border-0" placeholder="Penyelenggara/Penerbit">
+              </div>
+            </div>
+          </div>
+
+          <div class="row form-group">
+            <div class="col-12">
+              <label class="checkbox-control">Dengan ini saya menyatakan  bahwa data yang saya isi adalah benar dan dapat di pertanggung jawabkan di hadapan hukum
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+
+
           <div class="row form-group mb-20 mt-40">
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-              <button type="button" class="btn btn-primary btn-block mb-15" data-toggle="modal" data-target="#registerStatement">DAFTAR MENJADI PASIEN</button>
+              <button type="button" class="btn btn-primary btn-block mb-15">DAFTAR TENAGA KESEHATAN</button>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
               <button type="button" class="btn btn-outline-primary btn-block mb-15">BATAL</button>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row mt-50">
-    <div class="col-12 no-padding">
-      <div class="card bg-primary border-0 pt-50 pb-50">
-        <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-          <h4 class="text-white"><a href="clinic-register.html" target="_blank" class="invisible-link border-bottom">Sudah punya klinik dan ingin didaftarkan?</a> <span class="font-italic fw3">atau</span></h4>
-          <h4 class="text-white mt-15"><a href="medic-register.html" target="_blank" class="invisible-link border-bottom">Daftar menjadi tenaga kesehatan</a></h4>
         </div>
       </div>
     </div>
@@ -208,5 +272,20 @@
 <script src="dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
 <!-- Custom JS -->
 <script type="text/javascript" src="dist/js/pasiencare.js"></script>
+<script>
+    $('#inputGroupFile02').on('change',function(){
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        $(this).next('.custom-file-label').html(fileName);
+    })
+
+    function trainingStatementNo(){
+        document.getElementById('trainingForm').style.display = 'none';
+    }
+    function trainingStatementYes(){
+        document.getElementById('trainingForm').style.display = 'block';
+    }
+</script>
 </body>
 </html>

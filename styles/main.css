@@ -132,6 +132,10 @@
   border-bottom: solid 15px #F6F6F6;
 }
 
+.bg-overlay-white {
+  background: rgba(255, 255, 255, 0.9);
+}
+
 /*Button*/
 .btn-primary {
   background-color: #16a085;
@@ -153,6 +157,12 @@
 .btn-tertiary {
   background-color: rgba(0, 0, 0, 0.85);
   border-color: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
+
+.btn-primary-alt {
+  background-color: #f36a5a;
+  border-color: #f36a5a;
   color: #ffffff;
 }
 
@@ -338,6 +348,30 @@
   background: transparent;
 }
 
+.primary-input-file {
+  height: 160px;
+  display: table;
+}
+
+.primary-input-file input:focus {
+  box-shadow: none;
+}
+
+.primary-input-file label {
+  background-color: #16a085;
+  color: #ffffff;
+  line-height: 24px;
+  border: none;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+}
+
+.primary-input-file label::after {
+  display: none;
+}
+
 /*URL and Text*/
 a {
   color: #005CA8;
@@ -517,12 +551,9 @@ a.invisible-link {
 .checkbox-control {
   display: block;
   position: relative;
-  padding-left: 22px;
+  padding-left: 30px;
   margin-bottom: 5px;
   cursor: pointer;
-  font-size: 12px;
-  font-weight: 300;
-  color: #A2A2A2;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -542,7 +573,7 @@ a.invisible-link {
 }
 
 .checkbox-control input:checked ~ .checkmark {
-  background-color: #60AEEE;
+  background-color: #16a085;
   /* Show the checkmark when checked */
 }
 
@@ -551,7 +582,7 @@ a.invisible-link {
 }
 
 .checkbox-control:hover input ~ .checkmark {
-  background-color: #60AEEE;
+  background-color: #16a085;
 }
 
 .checkbox-control .checkmark {
@@ -562,7 +593,7 @@ a.invisible-link {
   height: 15px;
   width: 15px;
   border-radius: 4px;
-  background-color: #60AEEE;
+  background-color: #16a085;
 }
 
 .checkbox-control .checkmark:after {
@@ -689,7 +720,6 @@ a.invisible-link {
   height: 14px;
   border-radius: 50%;
   background-color: #16a085;
-  border: solid 2px #ffffff;
 }
 
 .radio-check {
