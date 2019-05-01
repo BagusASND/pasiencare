@@ -110,7 +110,7 @@
 }
 
 .bg-primary {
-  background-color: #16a085 !important;
+  background-color: #26c281 !important;
 }
 
 .bg-secondary {
@@ -138,14 +138,14 @@
 
 /*Button*/
 .btn-primary {
-  background-color: #16a085;
-  border-color: #16a085;
+  background-color: #26c281;
+  border-color: #26c281;
   color: #ffffff;
 }
 
 .btn-outline-primary {
-  color: #16a085;
-  border-color: #16a085;
+  color: #26c281;
+  border-color: #26c281;
 }
 
 .btn-secondary {
@@ -313,14 +313,14 @@
 }
 
 .input-group.primary-flat {
-  border-bottom: solid 1px #16a085;
+  border-bottom: solid 1px #26c281;
 }
 
 .input-group.primary-flat .input-group-prepend .input-group-text {
   background: transparent;
   border: none;
   padding-left: 0px;
-  color: #16a085;
+  color: #26c281;
 }
 
 .input-group.primary-flat .form-control {
@@ -328,11 +328,11 @@
   border: none;
   padding-left: 0px;
   padding-right: 0px;
-  color: #16a085;
+  color: #26c281;
 }
 
 .input-group.primary-flat .form-control::placeholder {
-  color: #16a085;
+  color: #26c281;
 }
 
 .input-group.primary-flat .form-control:focus {
@@ -358,7 +358,7 @@
 }
 
 .primary-input-file label {
-  background-color: #16a085;
+  background-color: #26c281;
   color: #ffffff;
   line-height: 24px;
   border: none;
@@ -383,7 +383,7 @@ a.invisible-link {
 }
 
 .text-primary {
-  color: #16a085 !important;
+  color: #26c281 !important;
 }
 
 .text-secondary {
@@ -573,7 +573,7 @@ a.invisible-link {
 }
 
 .checkbox-control input:checked ~ .checkmark {
-  background-color: #16a085;
+  background-color: #26c281;
   /* Show the checkmark when checked */
 }
 
@@ -582,7 +582,7 @@ a.invisible-link {
 }
 
 .checkbox-control:hover input ~ .checkmark {
-  background-color: #16a085;
+  background-color: #26c281;
 }
 
 .checkbox-control .checkmark {
@@ -593,7 +593,7 @@ a.invisible-link {
   height: 15px;
   width: 15px;
   border-radius: 4px;
-  background-color: #16a085;
+  background-color: #26c281;
 }
 
 .checkbox-control .checkmark:after {
@@ -701,8 +701,8 @@ a.invisible-link {
 }
 
 .radio-control input:checked ~ .radio-check {
-  background-color: #16a085;
-  border: solid 2px #16a085;
+  background-color: #26c281;
+  border: solid 2px #26c281;
 }
 
 .radio-control input:checked ~ .radio-check:after {
@@ -719,7 +719,7 @@ a.invisible-link {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: #16a085;
+  background-color: #26c281;
 }
 
 .radio-check {
@@ -1242,7 +1242,7 @@ a.invisible-link {
 .primary-tabs li a.active {
   border: none;
   background: transparent !important;
-  color: #16a085 !important;
+  color: #26c281 !important;
 }
 
 .primary-tabs li a:hover {
@@ -1259,7 +1259,7 @@ a.invisible-link {
   right: -90%;
   height: 100vh;
   z-index: 999;
-  background: #16a085;
+  background: #26c281;
   color: #2b2b2b;
   transition: all 0.3s;
   overflow-x: hidden;
@@ -1271,7 +1271,7 @@ a.invisible-link {
 }
 
 #sidebar .sidebar-header {
-  background-color: #16a085;
+  background-color: #26c281;
   padding: 15px 30px;
   position: relative;
 }
@@ -1546,7 +1546,7 @@ body {
 
 .heading-content {
   height: 400px;
-  background: linear-gradient(#16a085, #FFD8D8);
+  background: linear-gradient(#26c281, #FFD8D8);
   position: relative;
 }
 
@@ -1639,6 +1639,10 @@ header.after-scroll, header.read-scroll {
   font-size: 28px;
 }
 
+.app-logo img {
+  height: 33px;
+}
+
 footer {
   margin: 100px 0;
 }
@@ -1660,7 +1664,7 @@ footer .app-logo {
   content: '';
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   position: absolute;
   top: 0;
   left: 0;
@@ -1724,7 +1728,7 @@ footer .app-logo {
 }
 
 .slider-testimony-home .slick-arrow {
-  background-color: #16a085;
+  background-color: #26c281;
   padding: 9px 7px 5px;
   width: auto;
   height: auto;
@@ -1754,7 +1758,7 @@ footer .app-logo {
 }
 
 .single-slider .slick-arrow {
-  background-color: #16a085;
+  background-color: #26c281;
   padding: 9px 7px 5px;
   width: auto;
   height: auto;
@@ -1809,7 +1813,7 @@ footer .app-logo {
 }
 
 .primary-progress .progress-bar {
-  background-color: #16a085;
+  background-color: #26c281;
 }
 
 .img-profile {
