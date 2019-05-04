@@ -121,6 +121,10 @@
   background: linear-gradient(#B42025, #ED1C24);
 }
 
+.bg-primary-black {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
 .bg-fs-accent {
   background-image: url("../dist/img/Combined Shape.png");
   background-repeat: no-repeat;
@@ -370,6 +374,18 @@
 
 .primary-input-file label::after {
   display: none;
+}
+
+.form-datepicker.append-has-border .input-group-append button {
+  border: 1px solid #ced4da;
+}
+
+.form-datepicker.append-has-border .form-control {
+  border-right: none;
+}
+
+.form-datepicker .input-group-append button {
+  border: none;
 }
 
 /*URL and Text*/
@@ -1833,4 +1849,16 @@ footer .app-logo {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
+}
+
+.has-overlay {
+  position: relative;
+}
+
+.has-overlay:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
 }

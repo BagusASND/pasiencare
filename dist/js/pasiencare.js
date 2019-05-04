@@ -36,6 +36,12 @@ $(document).ready(function () {
         //replace the "Choose a file" label
         $(this).next('.custom-file-label').html(fileName);
     })
+
+
+    // DatePicker
+    $('#datepicker').datepicker({
+        uiLibrary: 'bootstrap4'
+    });
 });
 
 function trainingStatementNo(){
