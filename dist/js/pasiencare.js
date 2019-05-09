@@ -52,6 +52,25 @@ function trainingStatementYes(){
 }
 
 
+// Photo Profile Upload
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#imgPicker')
+                .attr('src', e.target.result);
+            $('#imgPicker').addClass('d-block');
+            $('#emptyPhotoProfile').addClass('d-none');
+            $('#fillPhotoProfile').removeClass('d-none');
+            $('#saveBtnPhotoProfile').removeAttr('disabled');
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+
 var scrollPixel = 0;
 $(window).scroll(function() {
     if($(this).scrollTop() > scrollPixel) {

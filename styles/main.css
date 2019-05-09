@@ -152,6 +152,11 @@
   border-color: #26c281;
 }
 
+.btn-primary[disabled] {
+  background-color: #CCCCCC;
+  border-color: #CCCCCC;
+}
+
 .btn-outline-primary {
   color: #26c281;
   border-color: #26c281;
