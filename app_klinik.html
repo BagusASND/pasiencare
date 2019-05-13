@@ -122,7 +122,7 @@
                     <div class="row form-group mb-20">
                       <label class="col-12 col-form-label fw5">Nama Klinik</label>
                       <div class="col-12">
-                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                        <input type="text" class="form-control" placeholder="Nama Klinik">
                       </div>
                     </div>
                     <div class="row form-group mb-20">
@@ -237,9 +237,10 @@
                         </div>
                       </div>
                     </div>
+                    <div id="serviceAppend"></div>
                     <div class="row mt-30">
                       <div class="col-12 text-right">
-                        <span class="text-primary fw5">TAMBAH LAYANAN</span>
+                        <span class="text-primary fw5 cursor-pointer" id="appendService">TAMBAH LAYANAN</span>
                       </div>
                     </div>
                   </div>
@@ -274,9 +275,10 @@
                         </div>
                       </div>
                     </div>
+                    <div id="supportAppend"></div>
                     <div class="row mt-30">
                       <div class="col-12 text-right">
-                        <span class="text-primary fw5">Tambah Tenaga Medis</span>
+                        <span class="text-primary fw5 cursor-pointer" id="appendSupport">Tambah Tenaga Medis</span>
                       </div>
                     </div>
                   </div>
@@ -381,13 +383,5 @@
 <script type="text/javascript" src="dist/js/fSelect.js"></script>
 <!-- Custom JS -->
 <script type="text/javascript" src="dist/js/pasiencare.js"></script>
-
-<script>
-    (function ($) {
-        $(function () {
-           $('.multi-select-form').fSelect();
-        });
-    })(jQuery);
-</script>
 </body>
 </html>

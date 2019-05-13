@@ -189,6 +189,11 @@
   background-color: #F6F6F6;
 }
 
+.btn-primary-default {
+  background-color: #4B77BE;
+  color: #FFFFFF;
+}
+
 .btn:focus {
   box-shadow: none;
 }
@@ -389,7 +394,6 @@
 .photo-upload-container {
   width: 180px;
   height: auto;
-  float: right;
 }
 
 .photo-upload-container .card {
@@ -409,6 +413,30 @@
 .photo-upload-container .card img {
   width: auto;
   max-height: 100%;
+}
+
+.photo-upload-container.has-push-position {
+  float: right;
+}
+
+.photo-upload-container.full-content {
+  width: 100%;
+}
+
+.photo-upload-container.full-content .card {
+  max-width: 100%;
+  height: 400px;
+}
+
+.photo-upload-container.full-content .card label {
+  color: #CCCCCC;
+  margin-top: 150px;
+}
+
+.photo-upload-container.full-content .card i {
+  position: unset;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .form-datepicker.append-has-border .input-group-append button {
@@ -1770,9 +1798,11 @@ footer .app-logo {
     width: 80% !important;
   }
   .photo-upload-container {
-    float: none;
     margin: auto;
     margin-bottom: 20px;
+  }
+  .photo-upload-container.has-push-position {
+    float: unset;
   }
 }
 

@@ -17,7 +17,7 @@
 
   <link rel="stylesheet" href="styles/main.css">
 
-  <title>Pasiencare - Profil Pasien</title>
+  <title>Pasiencare - Member | Pekerjaan</title>
 </head>
 <body>
 
@@ -88,36 +88,119 @@
       <div class="card border-0 shadow-sm p-15">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 col-xl-8 offset-xl-2">
-            <h4 class="text-center mt-50 pt-50">Foto Profil</h4>
+            <h4 class="text-center mt-50 pt-50">Data Pekerjaan</h4>
 
             <div class="row mt-50">
               <div class="col-12 text-center">
                 <img src="images/ryan.jpg" class="img-profile rounded-circle mb-10">
-                <p class="text-lg mt-20">Charles Fox</p>
+                <p class="text-lg mt-20">Dr. Tony Larson</p>
               </div>
-            </div>
-            <div class="row mt-50 mb-50">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                <div class="photo-upload-container has-push-position text-center">
-                  <div class="card bg-primary border-0 overflow-hidden">
-                    <i class="fas fa-camera fa-2x text-white"></i>
-                    <img id="imgPicker" src="error.src" onerror="this.style.display='none'"/>
-                  </div>
-                  <input type="file" id="pilihFoto" onchange="readURL(this);" class="d-none" />
-                  <div id="emptyPhotoProfile" class="">
-                    <label class="text-primary mt-15 cursor-pointer" for="pilihFoto">Pilih Foto</label>
-                  </div>
-                  <div id="fillPhotoProfile" class="d-none">
-                    <label class="text-primary mt-15 cursor-pointer mr-10" for="pilihFoto">Ganti</label>
-                    <label class="mt-15 cursor-pointer text-muted" id="removePhoto">Hapus</label>
+              <div class="col-12 pt-30">
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">Unit Kerja</label>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Unit Kerja">
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 align-self-center">
-                <div class="row">
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <button id="saveBtnPhotoProfile" type="button" class="btn btn-primary btn-sm btn-block mb-5" disabled>SIMPAN</button>
-                    <button type="button" class="btn btn-outline-primary btn-sm btn-block">BATAL</button>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">Alamat</label>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="Alamat">
+                  </div>
+                </div>
+                <div class="row form-group">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                    <div class="row form-group">
+                      <label class="col-12 col-form-label fw5">Kelurahan/Desa</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Desa/Kelurahan">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                    <div class="row form-group">
+                      <label class="col-12 col-form-label fw5">Kecamatan</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Kecamatan">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                    <div class="row form-group">
+                      <label class="col-12 col-form-label fw5">Kabupaten</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Kabupaten/Kota">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-20">
+                    <div class="row form-group">
+                      <label class="col-12 col-form-label fw5">Provinsi</label>
+                      <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Provinsi">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">No Telepon</label>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="No Telepon">
+                  </div>
+                </div>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">No Fax</label>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="No Fax">
+                  </div>
+                </div>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">No SIP</label>
+                  <div class="col-12">
+                    <input type="text" class="form-control" placeholder="No SIP">
+                  </div>
+                </div>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">Masa Berlaku SIP</label>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="input-group bg-white rounded form-datepicker append-has-border mb-10">
+                      <input id="datepicker_start_sertification"  type="text" class="form-control" placeholder="Tanggal Mulai Berlaku">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="input-group bg-white rounded form-datepicker append-has-border mb-10">
+                      <input id="datepicker_end_sertification"  type="text" class="form-control" placeholder="Tanggal Berakhir">
+                    </div>
+                  </div>
+                </div>
+                <div class="row form-group mb-20">
+                  <label class="col-12 col-form-label fw5">Upload File</label>
+                  <div class="col-12">
+                    <div class="photo-upload-container text-center">
+                      <div class="card bg-primary border-0 overflow-hidden">
+                        <i class="fas fa-camera fa-2x text-white"></i>
+                        <img id="imgPicker" src="error.src" onerror="this.style.display='none'" style="display: none;">
+                      </div>
+                      <input type="file" id="pilihFoto" onchange="readURL(this);" class="d-none">
+                      <div id="emptyPhotoProfile" class="">
+                        <label class="text-primary mt-15 cursor-pointer" for="pilihFoto">Pilih Gambar</label>
+                      </div>
+                      <div id="fillPhotoProfile" class="d-none">
+                        <label class="text-primary mt-15 cursor-pointer mr-10" for="pilihFoto">Ganti</label>
+                        <label class="mt-15 cursor-pointer text-muted" id="removePhoto">Hapus</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row form-group mb-50 mt-40">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-primary-default mb-15">SIMPAN</button>
+                    <button type="button" class="btn btn-outline-primary mb-15">KEMBALI</button>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <button type="button" class="btn btn-secondary mb-15">HAPUS</button>
                   </div>
                 </div>
               </div>
