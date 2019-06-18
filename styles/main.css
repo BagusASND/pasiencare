@@ -1596,18 +1596,22 @@ body {
 
 .horizontal-scrolling .list-inline.half1 li {
   width: 83%;
+  vertical-align: top;
 }
 
 .horizontal-scrolling .list-inline.half2 li {
   width: 43%;
+  vertical-align: top;
 }
 
 .horizontal-scrolling .list-inline.half3 li {
   width: 29%;
+  vertical-align: top;
 }
 
 .horizontal-scrolling .list-inline.half4 li {
   width: 21%;
+  vertical-align: top;
 }
 
 .horizontal-scrolling .list-inline li:last-child {
@@ -1677,6 +1681,11 @@ h1.lines3, h2.lines3, h3.lines3, h4.lines3, h5.lines3, h6.lines3 {
 .elipsis.lines3 {
   -webkit-line-clamp: 3;
   height: 54px;
+}
+
+.elipsis.lines4 {
+  -webkit-line-clamp: 4;
+  height: 69px;
 }
 
 .elipsis.lines10 {
